@@ -4,30 +4,35 @@ using OpenQA.Selenium.Chrome;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NunitFrameworkBasic
+namespace ConfigurationApp
 {
     public  class Nunit
     {
-       IWebDriver driver;
+   
 
         [SetUp]
         public  void Initialize()
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
+          
+
+            Driver.driver.Manage().Window.Maximize();
+            Driver.driver.Navigate().GoToUrl("https://demo.nopcommerce.com");           
+           
         }
 
         [Test]
         public  void OpenWebsite()
         {    
-            driver.Navigate().GoToUrl("https://demo.nopcommerce.com");           
+                     
+                     
             Thread.Sleep(3000);
+            Login.Loginuser();
         }
 
         [TearDown]
         public void EndTest()
         {
-            driver.Close();
+            Driver.driver.Close();
         }
 
     }

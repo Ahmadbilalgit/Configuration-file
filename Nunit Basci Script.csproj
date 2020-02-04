@@ -75,6 +75,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Driver.cs" />
+    <Compile Include="Login Object.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="Nunit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
