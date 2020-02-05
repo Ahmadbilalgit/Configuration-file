@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace ConfigurationApp
 {
@@ -25,8 +26,16 @@ namespace ConfigurationApp
         public IWebElement Loginlink { get; set; }
 
 
-        
+        [FindsBy(How = How.Id, Using = "Email")]
+        public IWebElement Email { get; set; }
 
+        [FindsBy(How = How.Id, Using = "Password")]
+        public IWebElement Password { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "/ html / body / div[6] / div[3] / div / div / div / div[2] / div[1] / div[2] / form / div[3] / input")]
+        public IWebElement Button { get; set; }
+
+        
     }
 }
 

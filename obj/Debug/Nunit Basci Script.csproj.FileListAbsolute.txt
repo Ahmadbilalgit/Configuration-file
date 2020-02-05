@@ -77,3 +77,4 @@ D:\Automation\Selenium\Round-2\Config File Implementation\obj\Debug\Nunit Basci 
 D:\Automation\Selenium\Round-2\Config File Implementation\obj\Debug\Nunit Basci Script.csproj.CopyComplete
 D:\Automation\Selenium\Round-2\Config File Implementation\obj\Debug\Nunit Basci Script.dll
 D:\Automation\Selenium\Round-2\Config File Implementation\obj\Debug\Nunit Basci Script.pdb
+D:\Automation\Selenium\Round-2\Config File Implementation\bin\Debug\Nunit Basci Script.dll.config

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace ConfigurationApp
 {
@@ -19,6 +20,12 @@ namespace ConfigurationApp
             abc.Loginlink.Click();
             Thread.Sleep(3000);
 
+            abc.Email.SendKeys(ConfigurationManager.AppSettings.Get("login"));
+            abc.Password.SendKeys(ConfigurationManager.AppSettings.Get("password"));
+
+            abc.Button.Click();
+
+            Thread.Sleep(3000);
         }
 
     }
